@@ -10,7 +10,7 @@ require 'nokogiri'
 
 Idea.delete_all
 
-path = "/home/eashan/Pictures/coolCars/0805_coolest_concept_cars/text"
+path = "app/assets/textseed/text"
 (2..21).each do |i|
 	str = %{#{i}}.rjust(2,'0')
 	image = %x{ls app/assets/images/#{str}*.jpg | xargs -n 1 basename}.strip	
